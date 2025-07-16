@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+
+body {
+  background: url("../wallpaper/xp.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: #c0c0c0;
+  font-family: 'IBM Plex Sans', Tahoma, sans-serif;
+  padding: 50px;
+}
+
+input {
+  padding: 6px 10px;
+  font-size: 14px;
+  background: #ffffff;
+  border: 2px solid #808080;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  border-bottom-color: #808080;
+  border-right-color: #808080;
+  box-shadow: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #808080;
+  width: 250px;
+}
+
+
+button {
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(to bottom, #ffffff, #d4d0c8);
+  border: 2px solid #f0f0f0;
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+  border-bottom-color: #808080;
+  border-right-color: #808080;
+  box-shadow: inset 1px 1px 0 #ffffff, inset -1px -1px 0 #808080;
+  cursor: pointer;
+}
+
+button:active {
+  background: linear-gradient(to bottom, #d4d0c8, #c0c0c0);
+  border-top-color: #808080;
+  border-left-color: #808080;
+  border-bottom-color: #ffffff;
+  border-right-color: #ffffff;
+  box-shadow: inset 1px 1px 0 #808080, inset -1px -1px 0 #ffffff;
+}

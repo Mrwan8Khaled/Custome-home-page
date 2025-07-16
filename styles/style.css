@@ -1,0 +1,52 @@
+body {
+  background: rgb(139, 0, 164);
+  background: linear-gradient(
+    180deg,
+    rgba(139, 0, 164, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.btns {
+
+}
+
+.mid {
+
+}
+
+.left {
+
+}
+
+.right {
+
+}
+
+.btns button {
+  background-color: black;
+
+  width: 150px;
+  height: 40px;
+
+  font-size: 18px;
+
+  border: none;
+  border-radius: 10px;
+}
+
+
+.mid div #searchBtn {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+
+  background-color: black;
+
+  border: none;
+  border-radius:  0 10px 10px 0;
+
+  cursor: pointer;
+}

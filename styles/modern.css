@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+input {
+  padding: 14px 40px;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  outline: none;
+  width: 260px;
+  transition: all 0.3s ease;
+  height: 45px;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+input:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.search div {
+    display: flex;
+    align-items: center;
+}
+
+.search #searchBtn {
+    border-left: none;
+    border-radius: 0 16px 16px 0;
+
+    height: 45px;
+
+    margin: 0;
+    /* padding: 0; */
+}
+.search input {
+    border-right: none;
+    border-radius: 16px 0 0 16px;
+
+    margin: 0;
+}
+
+button {
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,47 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+    body {
+      background: radial-gradient(circle at center, #121212, #000000);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+    }
+
+    button {
+      padding: 16px 40px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #ffffffee;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.4),
+        inset 0 -1px 1px rgba(0, 0, 0, 0.2),
+        0 4px 12px rgba(0, 0, 0, 0.6),
+        0 1px 1px rgba(255, 255, 255, 0.1);
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      transform: perspective(800px) translateZ(0);
+    }
+
+    button:hover {
+      transform: perspective(800px) translateZ(4px);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.5),
+        inset 0 -1px 1px rgba(0, 0, 0, 0.1),
+        0 6px 18px rgba(0, 0, 0, 0.7);
+    }
+
+    button:active {
+      transform: perspective(800px) translateZ(0px) scale(0.98);
+      box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.3),
+        0 3px 8px rgba(0, 0, 0, 0.5);
+    }
