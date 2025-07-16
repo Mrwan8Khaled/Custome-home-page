@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Workout Tracker 💪</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Today's Workout -->
+    <div class="today-box">
+      <h2><i class="fa-solid fa-calendar-day"></i> Today's Workout: <span id="todayWorkout">Loading...</span></h2>
+    </div>
+
+    <!-- Upper A (Sunday) -->
+    <div class="workout-day">
+      <div class="day-title">Sunday 🟥 - Upper A</div>
+
+      <div class="exercise"><span class="exercise-name">Bench Press</span><span class="sets-reps">4 × 8</span><input type="number" id="benchPressWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/gRVjAtPip0Y" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Machine Fly</span><span class="sets-reps">4 × 8</span><input type="number" id="machineFlyWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/eozdVDA78K0" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Machine Dips</span><span class="sets-reps">4 × 8</span><input type="number" id="machineDipsWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/2z8JmcrW-As" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">T-Bar Row</span><span class="sets-reps">4 × 8</span><input type="number" id="tbarRowWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/5jWfOFzPMeY" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Pull-ups</span><span class="sets-reps">3 × 8</span><input type="number" id="pullupsWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/eGo4IYlbE5g" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Lat Pulldown</span><span class="sets-reps">3 × 8</span><input type="number" id="latPulldownWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/CAwf7n6Luuc" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Overhead Press</span><span class="sets-reps">4 × 8</span><input type="number" id="overheadPressWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/qEwKCR5JCog" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Lateral Raises</span><span class="sets-reps">4 × 10</span><input type="number" id="lateralRaisesWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/3VcKaXpzqRo" target="_blank" class="btn">🎥</a></div>
+    </div>
+
+    <!-- Lower A (Monday) -->
+    <div class="workout-day">
+      <div class="day-title">Monday 🟧 - Lower A</div>
+
+      <div class="exercise"><span class="exercise-name">Leg Extension</span><span class="sets-reps">4 × 10</span><input type="number" id="legExtensionWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/YyvSfVjQeL0" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Seated Hamstring Curl</span><span class="sets-reps">4 × 10</span><input type="number" id="seatedHamstringWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/1Tq3QdYUuHs" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Hip Abduction</span><span class="sets-reps">3 × 12</span><input type="number" id="hipAbductionWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/IwZ6QZdB4fY" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Hip Adduction</span><span class="sets-reps">3 × 12</span><input type="number" id="hipAdductionWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/xQNrFHEMhI4" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Seated Calf Raises</span><span class="sets-reps">4 × 15</span><input type="number" id="seatedCalfWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/-M4-G8p8fmc" target="_blank" class="btn">🎥</a></div>
+    </div>
+
+    <!-- Tuesday - Rest -->
+    <div class="workout-day">
+      <div class="day-title">Tuesday 💧 - Rest</div>
+      <p style="text-align:center;">Active recovery: walk, bike, or stretch 🧘‍♂️</p>
+    </div>
+
+    <!-- Upper B (Wednesday) -->
+    <div class="workout-day">
+      <div class="day-title">Wednesday 🟦 - Upper B</div>
+
+      <div class="exercise"><span class="exercise-name">Incline Machine Press</span><span class="sets-reps">4 × 8</span><input type="number" id="inclinePressWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/4Y2ZdHCOXok" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Cable Fly</span><span class="sets-reps">4 × 8</span><input type="number" id="cableFlyWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/WEMRzGktYFc" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Chest Dips</span><span class="sets-reps">3 × 10</span><input type="number" id="chestDipsWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/2z8JmcrW-As" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Dumbbell Row</span><span class="sets-reps">4 × 10</span><input type="number" id="dumbbellRowWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/pYcpY20QaE8" target="_blank" class="btn">🎥</a></div>
+    </div>
+
+    <!-- Lower B (Thursday) -->
+    <div class="workout-day">
+      <div class="day-title">Thursday 🟨 - Lower B</div>
+
+      <div class="exercise"><span class="exercise-name">Lying Hamstring Curl</span><span class="sets-reps">4 × 10</span><input type="number" id="lyingHamstringWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/1Tq3QdYUuHs" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Leg Extension</span><span class="sets-reps">3 × 12</span><input type="number" id="legExtensionBWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/YyvSfVjQeL0" target="_blank" class="btn">🎥</a></div>
+      <div class="exercise"><span class="exercise-name">Glute Kickbacks</span><span class="sets-reps">3 × 10</span><input type="number" id="gluteKickbacksWeight" class="weight-input" placeholder="kg"><a href="https://youtu.be/veF2xGnbkMM" target="_blank" class="btn">🎥</a></div>
+    </div>
+
+    <!-- Friday - Rest -->
+    <div class="workout-day">
+      <div class="day-title">Friday 🌿 - Rest</div>
+      <p style="text-align:center;">Total rest. Enjoy your day! 💤</p>
+    </div>
+
+    <!-- Saturday - Rest -->
+    <div class="workout-day">
+      <div class="day-title">Saturday 🌿 - Rest</div>
+      <p style="text-align:center;">Recovery & stretching 🧘</p>
+    </div>
+
+    <!-- Progress Tracker -->
+    <div class="workout-day">
+      <div class="day-title">📈 Progress Tracker</div>
+
+      <label>🏋️ Body Weight (kg):</label>
+      <input type="number" id="bodyWeight" class="input" placeholder="e.g. 75" />
+
+      <button onclick="saveProgress()" class="btn">💾 Save Progress</button>
+      <button onclick="exportProgress()" class="btn">📤 Export</button>
+      <label class="btn" style="display:inline-block; cursor:pointer;">
+        📥 Import
+        <input type="file" onchange="importProgress(event)" style="display:none" />
+      </label>
+
+      <p id="lastUpdate" style="margin-top: 10px; font-style: italic; color: gray;"></p>
+
+      <canvas id="progressChart"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
