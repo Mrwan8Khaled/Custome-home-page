@@ -1,0 +1,56 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* color: white; */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.settings {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.settings button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: auto;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  height: 100%;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 100%;
+  width: 100%;
+}
+
+.search {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
