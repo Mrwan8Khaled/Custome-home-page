@@ -3,6 +3,7 @@
 body {
   background: url("../wallpaper/xp.jpg") no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   background-color: #c0c0c0;
   font-family: 'IBM Plex Sans', Tahoma, sans-serif;
   padding: 50px;
@@ -22,7 +23,7 @@ input {
 }
 
 
-button {
+a , button {
   padding: 6px 20px;
   font-size: 14px;
   font-weight: bold;
@@ -37,7 +38,7 @@ button {
   cursor: pointer;
 }
 
-button:active {
+a:active ,button:active {
   background: linear-gradient(to bottom, #d4d0c8, #c0c0c0);
   border-top-color: #808080;
   border-left-color: #808080;

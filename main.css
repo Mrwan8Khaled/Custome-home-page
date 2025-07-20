@@ -6,6 +6,10 @@
   /* color: white; */
 }
 
+body{
+  height: 100vh;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -19,6 +23,20 @@ a {
   cursor: pointer;
 }
 
+.settingsMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  display: none; /* Initially hidden */
+
+  height: 270px;
+  width: 250px;
+}
+
 .settings button {
   background: transparent;
   border: none;
@@ -30,7 +48,7 @@ a {
 .sections {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  /* justify-content: center; */
+  justify-content: center;
   /* justify-content: space-between; */
   height: 100%;
 }

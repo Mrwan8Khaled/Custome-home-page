@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" id="pageStyle" href="styles/modern.css" />
+    <link rel="stylesheet" id="pageStyle" href="styles/xp.css" />
     <title>New tab</title>
 </head>
 <body>
   
   <div class="settings">
-    <button> <i class="fa fa-gear"></i></button>
+    <button id="settings"> <i class="fa fa-gear"></i></button>
+  </div>
+
+  <div class="settingsMenu">
+    <!-- style options as option input list -->
+    <div class="styleOptions">
+      <label for="styleSelect">Choose a style:</label>
+      <select id="styleSelect">
+        <option value="xp.css">Windows XP</option>
+        <option value="modern.css">Modern</option>
+        <option value="glass.css">glass</option>
+      </select>
+    </div>
   </div>
 
   <div class="sections">
     
     <div class="btns left">
-      <button href="pages/gym/index.html">Programing</button>
-      <button><a href="pages/gym/index.html">GYM</a></button>
-      <button>AI</button> 
+      <a href="pages/gym/index.html">Programing</a>
+      <a href="pages/gym/index.html">GYM</a>
+      <a>AI</a> 
     </div>
 
     <div class="mid search">
