@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gym Home Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="start.css">
+  <link rel="icon" type="image/x-icon" href="../../wallpaper/gym-near.png">
+</head>
+<body>
+  <!-- Tutorial Section -->
+  <section class="section" id="tutorialSection">
+    <div class="imageTutorial">
+        <img id="tutorialImg" class="tutorial-img" src="../../wallpaper/xp.jpg" alt="Tutorial Image">
+        <div id="tutorialText">Welcome to your gym tracker! Use the buttons below to navigate the tutorial.</div>
+        <div id="tutorialButtons">
+          <button class="tutorial-btn" onclick="prevTutorial()">⬅️ Back</button>
+          <button class="tutorial-btn" onclick="nextTutorial()">Next ➡️</button>
+        </div>
+        <div id="endTutorial">
+            <button class="tutorial-btn" onclick="endTutorial()">Done ➡️</button>
+        </div> 
+    </div>
+  </section>
+
+  <!-- Days Section -->
+  <section class="section" id="daysSection">
+    <h2>Workout Days</h2>
+    <ul id="daysList">
+        <label for="sundayName">Add Sunday name</label>
+        <input type="text" class="dayName" placeholder="Sunday name">
+        <hr>
+
+        <label for="mondayName">Add Monday name</label>
+        <input type="text" class="dayName" placeholder="Monday name">
+        <hr>
+
+        <label for="tuesdayName">Add Tuesday name</label>
+        <input type="text" class="dayName" placeholder="Tuesday name">
+        <hr>
+
+        <label for="wednesdayName">Add Wednesday name</label>
+        <input type="text" class="dayName" placeholder="Wednesday name">
+        <hr>
+
+        <label for="thursdayName">Add Thursday name</label>
+        <input type="text" class="dayName" placeholder="Thursday name">
+        <hr>
+
+        <label for="fridayName">Add Friday name</label>
+        <input type="text" class="dayName" placeholder="Friday name">
+        <hr>
+
+        <label for="saturdayName">Add Saturday name</label>
+        <input type="text" class="dayName" placeholder="Saturday name">
+        <hr>
+
+    </ul>
+    <button id="DaysNames" onclick="SavedaysName()">Done</button>
+  </section>
+
+  <!-- Exercises Section -->
+  <section class="sction" id="exercisesSection">
+    <h2>Exercises for Each Day</h2>
+    <div id="exercisesContainer">
+      <!-- Exercises tables will be rendered here -->
+    </div>
+  </section>
+
+
+  <script>
+    // Tutorial Section Data
+    const tutorials = [
+      { img: "../../wallpaper/xp.jpg", text: "Welcome to your gym tracker! Use the buttons below to navigate the tutorial." },
+      { img: "../../wallpaper/xp.jpg", text: "Track your progress and save your workouts easily." },
+      { img: "../../wallpaper/xp.jpg", text: "Export and import your data for backup or transfer." }
+    ];
+    let tutorialIndex = 0;
+
+    function IsTutorialEnded() {
+        if (tutorialIndex === tutorials.length - 1) {
+            document.getElementById("endTutorial").style.display = "block";
+            document.getElementById("tutorialButtons").style.display = "none";
+        } else {
+            document.getElementById("endTutorial").style.display = "none";
+            // document.getElementById("tutorialButtons").style.display = "flex";
+            
+        }
+    }
+
+    function showTutorial(idx) {
+      document.getElementById("tutorialImg").src = tutorials[idx].img;
+      document.getElementById("tutorialText").innerText = tutorials[idx].text;
+    }
+    function prevTutorial() {
+      if (tutorialIndex === 0) {
+        return;
+      }
+      tutorialIndex = (tutorialIndex - 1 + tutorials.length) % tutorials.length;
+      showTutorial(tutorialIndex);
+    }
+    function nextTutorial() {
+      tutorialIndex = (tutorialIndex + 1) % tutorials.length;
+      showTutorial(tutorialIndex);
+      IsTutorialEnded();
+    }
+    // Initialize tutorial
+    showTutorial(tutorialIndex);
+
+    function endTutorial() {
+      document.getElementById("tutorialSection").style.display = "none";
+      document.getElementById("daysSection").style.display = "block";
+      document.getElementById("exercisesSection").style.display = "none";
+    }
+
+    // Days Section Data
+    let customDays = [
+      "Sunday 🟥 - Rest / Cardio",
+      "Monday 🟧 - Rest / Cardio",
+      "Tuesday 💧 - Rest / Cardio",
+      "Wednesday 🟦 - Rest / Cardio",
+      "Thursday 🟨 - Rest / Cardio",
+      "Friday 🌿 - Rest / Cardio",
+      "Saturday 🌿 - Rest / Cardio"
+    ];
+
+    function SavedaysName() {
+      const dayNames = document.querySelectorAll(".dayName");
+      const daysList = document.getElementById("daysList");
+      daysList.innerHTML = ""; // Clear existing list
+      dayNames.forEach((input, index) => {
+        customDays[index] = input.value || customDays[index]; // Use input value or default
+        console.log(input.value, "-----",customDays[index]);
+      });
+
+      console.log(customDays);
+      
+      document.getElementById("daysSection").style.display = "none";
+      document.getElementById("exercisesSection").style.display = "block";
+      document.getElementById("tutorialSection").style.display = "none";
+    }
+
+    console.log(customDays);
+
+
+    // Exercises Section Data (example, use your real data)
+    const exercises = [
+      [
+        ["Bench Press", "4 x 8", "https://youtu.be/gRVjAtPip0Y"],
+        ["Incline Machine Press", "4 x 10", "https://youtu.be/DbFgADa2PL8"]
+      ],
+      [
+        ["Leg Curl (Seated)", "4 x 12", "https://youtu.be/1Tq3QdYUuHs"]
+      ],
+      [],
+      [
+        ["Bench Press", "4 x 8", "https://youtu.be/gRVjAtPip0Y"]
+      ],
+      [
+        ["Leg Curl (Lying)", "4 x 12", "https://youtu.be/1Tq3QdYUuHs"]
+      ],
+      [],
+      []
+    ];
+    const exercisesContainer = document.getElementById("exercisesContainer");
+    exercises.forEach((dayExercises, dayIdx) => {
+      const dayDiv = document.createElement("div");
+      console.log(customDays[dayIdx]);
+      dayDiv.innerHTML = `<h3>${customDays[dayIdx]}</h3>`;
+      if (dayExercises.length === 0) {
+        dayDiv.innerHTML += "<p>Rest day! 💤</p>";
+      } else {
+        let table = `<table class="exercise-table"><thead><tr>
+          <th>Name</th><th>Sets & Reps</th><th>Link</th></tr></thead><tbody>`;
+        dayExercises.forEach(ex => {
+          table += `<tr>
+            <td>${ex[0]}</td>
+            <td>${ex[1]}</td>
+            <td><a href="${ex[2]}" target="_blank">🔗</a></td>
+          </tr>`;
+        });
+        table += "</tbody></table>";
+        dayDiv.innerHTML += table;
+      }
+      exercisesContainer.appendChild(dayDiv);
+    });
+  </script>
+</body>
+</html>

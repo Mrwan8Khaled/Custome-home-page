@@ -1,0 +1,78 @@
+[
+  [
+    ["Bench Press", "4 x 8", "https://youtu.be/gRVjAtPip0Y"],
+    ["Incline Machine Press", "4 x 10", "https://youtu.be/DbFgADa2PL8"],
+    ["Chest Fly Machine", "4 x 12", "https://youtu.be/eozdVDA78K0"],
+    ["Shoulder Press Machine", "4 x 8", "https://youtu.be/B-aVuyhvLHU"],
+    ["Deltoid Raise Machine", "4 x 12", "https://youtu.be/1Kx74XnZ4Zk"],
+    ["Reverse Pec Deck", "4 x 12", "https://youtu.be/ImD6xUu0EdU"],
+    ["Dumbbell Curl", "4 x 10", "https://youtu.be/sAq_ocpRh_I"],
+    ["Bicep Curl Isolateral", "4 x 10", "https://youtu.be/jytBfRQ72yQ"],
+    ["Triceps Pushdown (Rope)", "4 x 12", "https://youtu.be/2-LAMcpzODU"],
+    ["Overhead Dumbbell Extension", "4 x 10", "https://youtu.be/_gsUck-7M74"],
+
+    ["Pull-Ups", "4 x 3", "https://youtu.be/eGo4IYlbE5g"],
+    ["Lat Pulldown", "4 x 10", "https://youtu.be/CAwf7n6Luuc"],
+    ["Seated Cable Row", "4 x 12", "https://youtu.be/HJSVR_67OlM"],
+    ["Wide Grip Row", "4 x 12", "https://youtu.be/GZbfZ033f74"],
+    ["T-Bar Row", "4 x 10", "https://youtu.be/8Lmq0Tu5QYg"],
+    ["Reverse Pec Deck", "4 x 15", "https://youtu.be/ImD6xUu0EdU"],
+    ["Dumbbell Shrugs", "4 x 12", "https://youtu.be/3nXY4EFN20o"],
+    ["Back Extension", "3 x 15", "https://youtu.be/ph3pddpKzzw"]
+  ],
+  [
+    ["Leg Extension", "4 x 12", "https://youtu.be/YyvSfVjQeL0"],
+    ["Leg Curl (Seated)", "4 x 12", "https://youtu.be/1Tq3QdYUuHs"],
+    ["Adduction Machine", "3 x 15", "https://youtu.be/mcLsjT1CyU4"],
+    ["Abduction Machine", "3 x 15", "https://youtu.be/HzhpO2-j3is"],
+    ["Seated Leg Press", "4 x 10", "https://youtu.be/MVmKZqU6hWc"],
+    ["Standing Calf Raise", "4 x 20", "https://youtu.be/-M4-G8p8fmc"],
+
+    ["Crunches", "3 x 20", "https://youtu.be/Xyd_fa5zoEU"],
+    ["Plank", "3 x 30 sec", "https://youtu.be/pSHjTRCQxIw"],
+    ["Hanging Leg Raises", "3 x 10", "https://youtu.be/13j0c9a1b2g"],
+    ["Side Crunches", "3 x 20 (10 each side)", "https://youtu.be/w0OWFjfI3zM"],
+    ["Side Plank (Each Side)", "3 x 30 sec", "https://youtu.be/wqzrb67Dwf8"],
+    ["Russian Twist", "3 x 20 (10 each side)", "https://youtu.be/wkD8rjkodUI"]    
+  ],
+  [],
+  [
+    ["Bench Press", "4 x 8", "https://youtu.be/gRVjAtPip0Y"],
+    ["Incline Machine Press", "4 x 10", "https://youtu.be/DbFgADa2PL8"],
+    ["Chest Fly Machine", "4 x 12", "https://youtu.be/eozdVDA78K0"],
+    ["Shoulder Press Machine", "4 x 8", "https://youtu.be/B-aVuyhvLHU"],
+    ["Deltoid Raise Machine", "4 x 12", "https://youtu.be/1Kx74XnZ4Zk"],
+    ["Reverse Pec Deck", "4 x 12", "https://youtu.be/ImD6xUu0EdU"],
+    ["Dumbbell Curl", "4 x 10", "https://youtu.be/sAq_ocpRh_I"],
+    ["Bicep Curl Isolateral", "4 x 10", "https://youtu.be/jytBfRQ72yQ"],
+    ["Triceps Pushdown (Rope)", "4 x 12", "https://youtu.be/2-LAMcpzODU"],
+    ["Overhead Dumbbell Extension", "4 x 10", "https://youtu.be/_gsUck-7M74"],
+    
+    ["Pull-Ups", "4 x 3", "https://youtu.be/eGo4IYlbE5g"],
+    ["Lat Pulldown", "4 x 10", "https://youtu.be/CAwf7n6Luuc"],
+    ["Seated Cable Row", "4 x 12", "https://youtu.be/HJSVR_67OlM"],
+    ["Wide Grip Row", "4 x 12", "https://youtu.be/GZbfZ033f74"],
+    ["T-Bar Row", "4 x 10", "https://youtu.be/8Lmq0Tu5QYg"],
+    ["Reverse Pec Deck", "4 x 15", "https://youtu.be/ImD6xUu0EdU"],
+    ["Dumbbell Shrugs", "4 x 12", "https://youtu.be/3nXY4EFN20o"],
+    ["Back Extension", "3 x 15", "https://youtu.be/ph3pddpKzzw"]
+  ],
+
+  [
+    ["Leg Extension", "4 x 12", "https://youtu.be/YyvSfVjQeL0"],
+    ["Leg Curl (Lying)", "4 x 12", "https://youtu.be/1Tq3QdYUuHs"],
+    ["Adduction Machine", "3 x 15", "https://youtu.be/mcLsjT1CyU4"],
+    ["Abduction Machine", "3 x 15", "https://youtu.be/HzhpO2-j3is"],
+    ["Seated Leg Press", "4 x 10", "https://youtu.be/MVmKZqU6hWc"],
+    ["Standing Calf Raise", "4 x 20", "https://youtu.be/-M4-G8p8fmc"],
+
+    ["Crunches", "3 x 20", "https://youtu.be/Xyd_fa5zoEU"],
+    ["Plank", "3 x 30 sec", "https://youtu.be/pSHjTRCQxIw"],
+    ["Hanging Leg Raises", "3 x 10", "https://youtu.be/13j0c9a1b2g"],
+    ["Side Crunches", "3 x 20 (10 each side)", "https://youtu.be/w0OWFjfI3zM"],
+    ["Side Plank (Each Side)", "3 x 30 sec", "https://youtu.be/wqzrb67Dwf8"],
+    ["Russian Twist", "3 x 20 (10 each side)", "https://youtu.be/wkD8rjkodUI"]    
+  ],
+  [],
+  []
+]
